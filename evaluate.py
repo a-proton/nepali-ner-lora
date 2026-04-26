@@ -1,8 +1,8 @@
 """
 Evaluation script for Nepali NER LoRA model
 Authors: Avinash Gautam, Smarika Ghimire
-Pokhara University, Nepal
-avinasgautam344@gmail.com , smarikaghimire35@gmail.com
+School of Engineering, Pokhara University, Nepal
+avinashgautam@student.pu.edu.np , smarikaghimire@student.pu.edu.np
 """
 
 import torch

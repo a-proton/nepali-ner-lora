@@ -1,0 +1,37 @@
+{
+  "experiment_A_std_deviation": {
+    "seeds": [42, 123, 456, 789, 2024],
+    "f1_scores": [78.05, 79.95, 79.59, 79.80, 78.87],
+    "mean_f1": 79.25,
+    "std_f1": 0.71,
+    "config": "query+value modules"
+  },
+  "experiment_A_all_attention": {
+    "seeds": [42, 123, 456, 789, 2024],
+    "f1_scores": [81.40, 82.10, 83.22, 81.85, 80.79],
+    "mean_f1": 81.87,
+    "std_f1": 0.81,
+    "config": "all attention modules"
+  },
+  "experiment_B_hindi_scaling": {
+    "hindi_0": 75.06,
+    "hindi_1000": 77.21,
+    "hindi_3000": 75.76,
+    "hindi_6000": 77.90,
+    "best_size": 6000
+  },
+  "experiment_C_peft_comparison": {
+    "lora": 77.74,
+    "prefix_tuning": 63.96,
+    "bitfit": 60.97,
+    "full_finetuning": 79.97,
+    "note": "Nepali-only training"
+  },
+  "experiment_D_module_ablation": {
+    "query_only": 73.47,
+    "value_only": 76.02,
+    "query_value": 77.74,
+    "query_value_key": 78.04,
+    "all_attention": 81.43
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "seed": 456,
+  "train_size": 2631,
+  "valid_size": 329,
+  "test_size": 329,
+  "note": "Use same seed with numpy permutation to reproduce"
+}

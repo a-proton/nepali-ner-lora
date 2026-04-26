@@ -1,0 +1,16 @@
+{
+  "f1": 81.81,
+  "precision": 80.81,
+  "recall": 82.83,
+  "seed": 456,
+  "model": "google-bert/bert-base-multilingual-cased",
+  "lora_r": 16,
+  "target_modules": [
+    "query",
+    "value",
+    "key",
+    "dense"
+  ],
+  "mean_f1_5seeds": 81.87,
+  "std_f1_5seeds": 0.81
+}

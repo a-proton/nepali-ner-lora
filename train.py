@@ -3,8 +3,9 @@ Parameter-Efficient Nepali Named Entity Recognition
 with LoRA and Hindi Cross-Lingual Transfer
 
 Authors: Avinash Gautam, Smarika Ghimire
-Institution: Pokhara University, Nepal
-Email: avinasgautam344@gmail.com, smarikaghimire35@gmail.com
+Institution: School of Engineering, Pokhara University, Nepal
+Email: avinashgautam@student.pu.edu.np , smarikaghimire@student.pu.edu.np
+
 
 Paper: Parameter-Efficient Nepali NER with LoRA and Hindi Transfer
 GitHub: https://github.com/a-proton/nepali-ner-lora

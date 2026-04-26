@@ -7,7 +7,7 @@ with Hindi cross-lingual transfer.
 **Paper:** Parameter-Efficient Nepali NER with LoRA and
 Hindi Cross-Lingual Transfer  
 **Authors:** Avinash Gautam, Smarika Ghimire  
-**Institution:** Pokhara University, Nepal  
+**Institution:** School of Engineering, Pokhara University, Nepal  
 **Code:** https://github.com/a-proton/nepali-ner-lora  
 **Model:** https://huggingface.co/a-proton/nepali-ner-lora
 
