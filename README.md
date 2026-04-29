@@ -9,7 +9,8 @@ Hindi Cross-Lingual Transfer
 **Authors:** Avinash Gautam, Smarika Ghimire  
 **Institution:** School of Engineering, Pokhara University, Nepal  
 **Code:** https://github.com/a-proton/nepali-ner-lora  
-**Model:** https://huggingface.co/a-proton/nepali-ner-lora
+**Model:** https://huggingface.co/a-proton/nepali-ner-lora  
+**W&B:** https://wandb.ai/a-proton-/nepali-ner-lora
 
 ---
 
@@ -89,6 +90,68 @@ attention: 81.87% ± 0.81% (reported in paper).
 
 ---
 
+## Experiment Tracking
+
+Full training curves, metrics, and logs available
+on Weights & Biases:
+
+[![W&B](https://img.shields.io/badge/Weights_%26_Biases-FFBE00?style=flat&logo=weightsandbiases&logoColor=white)](https://wandb.ai/a-proton-/nepali-ner-lora)
+
+**Project:** https://wandb.ai/a-proton-/nepali-ner-lora  
+**Run:** https://wandb.ai/a-proton-/nepali-ner-lora/runs/hfblpfpq
+
+Tracks: training loss, validation loss, F1 score,
+learning rate, and per-entity metrics.
+
+---
+
+## Analysis Notebook
+
+See `experiment_analysis.ipynb` for detailed results
+visualization and error analysis including:
+
+- Dataset statistics
+- Configuration comparison charts
+- Multi-seed reproducibility analysis
+- Hindi data scaling visualization
+- PEFT methods comparison
+- Module ablation charts
+- Live model demo on Nepali text
+
+---
+
+## Visualizations
+
+### Configuration Comparison
+
+![Config Comparison](figures/config_comparison.png)
+
+### Multi-Seed Reproducibility
+
+![Seed Analysis](figures/seed_analysis.png)
+
+### Hindi Data Scaling
+
+![Hindi Scaling](figures/hindi_scaling.png)
+
+### Module Ablation
+
+![Module Ablation](figures/module_ablation.png)
+
+### PEFT Methods Comparison
+
+![PEFT Comparison](figures/peft_comparison.png)
+
+### Efficiency Analysis
+
+![Efficiency](figures/efficiency_analysis.png)
+
+### Dataset Analysis
+
+![Dataset](figures/dataset_analysis.png)
+
+---
+
 ## Setup
 
 ```bash
@@ -111,7 +174,8 @@ python train.py
 ```
 
 Default config uses all attention modules (best result).
-Edit CONFIG dictionary in train.py to try other configurations:
+Edit CONFIG dictionary in train.py to try other
+configurations:
 
 ```python
 # Config 5 (best - default)
@@ -130,20 +194,44 @@ python evaluate.py
 ## Reproducibility
 
 - Exact train/validation/test splits in data_splits.json
+- All experiment results in experiments.json
 - Results reported as mean ± std over 5 random seeds
 - Seed values: 42, 123, 456, 789, 2024
 - Best model weights available on HuggingFace
+- Training curves available on W&B
 
 ## Model
 
 HuggingFace: https://huggingface.co/a-proton/nepali-ner-lora
 
-Uploaded model uses seed=456 (best individual run).
-Paper reports mean ± std over all 5 seeds.
+Uploaded model uses seed=456 (best individual run:
+83.22% F1). Paper reports mean ± std over all 5 seeds
+(81.87% ± 0.81%).
+
+## Repository Structure
+
+nepali-ner-lora/
+├── train.py ← Training script
+├── evaluate.py ← Evaluation script
+├── requirements.txt ← Dependencies
+├── README.md ← This file
+├── experiments.json ← All experiment results
+├── results.json ← Final model results
+├── data_splits.json ← Reproducible data splits
+├── experiment_analysis.ipynb ← Analysis notebook
+└── figures/ ← All visualization plots
+├── config_comparison.png
+├── seed_analysis.png
+├── hindi_scaling.png
+├── module_ablation.png
+├── peft_comparison.png
+├── efficiency_analysis.png
+└── dataset_analysis.png
 
 ## Citation
 
-Paper under review. Citation will be added upon publication.
+Paper under review. Citation will be added upon
+publication.
 
 ## License
 
